@@ -1,0 +1,29 @@
+{
+  "name": "networthy",
+  "version": "0.1.0",
+  "description": "A CLI for HTTP requests, made in Typescript.",
+  "main": "dist/index.js",
+  "bin": {
+    "networthy": "./dist/index.js"
+  },
+  "scripts": {
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrifTheDev/networthy.git"
+  },
+  "author": "Teo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GrifTheDev/networthy/issues"
+  },
+  "homepage": "https://github.com/GrifTheDev/networthy#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "commander": "^9.5.0"
+  }
+}

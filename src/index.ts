@@ -12,6 +12,7 @@ program.command('GET')
     .argument("<URL>", "The URL to which you want to make the GET request.")
     .action((str) => {
         console.log(str)
+        // cool
     })
 
 program.parse();

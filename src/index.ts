@@ -1,18 +1,12 @@
 #! /usr/bin/env node
-import { Command } from "commander";
-const program: Command = new Command();
+var arguments: Array<string> = process.argv
 
-program
-  .name("networthy")
-  .description("A CLI for HTTP requests, made in Typescript.")
-  .version("0.1.0");
+// TODO: Command Handler
 
-program.command('GET')
-    .description("Make a GET request to the specified URL.")
-    .argument("<URL>", "The URL to which you want to make the GET request.")
-    .action((str) => {
-        console.log(str)
-        // cool
-    })
+if (arguments.length < 3) {
+  // TODO: Print help page
+  console.log("ERROR: No arguments provided")
+  process.exit(1)
+}
 
-program.parse();
+var command: string = arguments[2]
